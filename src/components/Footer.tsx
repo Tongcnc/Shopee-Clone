@@ -90,7 +90,7 @@ const Country = [
 function Footer() {
   return (
     <div>
-      <footer className="bg-white">
+      <footer>
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5">
             <div>
@@ -141,7 +141,7 @@ function Footer() {
                         <img
                           src={payment}
                           alt="payment method"
-                          className="rounded-sm shadow-md"
+                          className="rounded-sm shadow-md bg-white"
                         />
                       </a>
                     </li>
@@ -160,7 +160,7 @@ function Footer() {
                         <img
                           src={exp}
                           alt="express company"
-                          className="rounded-sm shadow-md"
+                          className="rounded-sm shadow-md bg-white"
                         />
                       </a>
                     </li>
@@ -198,7 +198,7 @@ function Footer() {
                     className="rounded-sm shadow-md"
                   />
                 </a>
-                <ul>
+                <ul className="bg-white flex flex-col gap-1">
                   <li className="p-2 rounded-sm shadow-md">
                     <a href="#">
                       <img
@@ -229,7 +229,7 @@ function Footer() {
           </div>
 
           {/* Copy Right */}
-          <div className="px-4 py-6 flex gap-10 text-gray text-sm">
+          <div className="px-4 py-6 flex justify-between text-gray text-sm border-t-[1px] border-gray">
             <p>© 2023 Shopee. All Rights Reserved</p>
             <div className="flex">
               <p>Country & Region: </p>

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .Link {
+    @apply text-blue underline;
+  }
+  .Tag {
+    @apply bg-yellow text-Primary-color px-1 text-xs;
+  }
+}
